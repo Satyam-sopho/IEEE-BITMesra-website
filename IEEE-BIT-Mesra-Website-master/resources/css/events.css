@@ -1,29 +1,33 @@
 body {
-    margin: 0;
+    /*margin: 0;*/
     font-family: Verdana;
-    background: #1A477E;
+    background: green;
 }
 
-.container {
+.cont {
     margin: 0 2%;
     position: relative;
     
 }
 
-.container h1 {
+.cont h1 {
     font-size: 32px;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
 }
-
-.mgt50px {
-    margin-top: 50px;
+.cont .row .column{
+	float:left;
 }
 
+/*.mgt50px {
+    margin-top: 50px;
+}*/
 
+/*.row .column{
+	
+}*/
 .row .column {
-    float: left;
     width: 45%;
     margin: 1.5%;
 }
@@ -111,7 +115,7 @@ body {
         width: 90%;
         float: none;
     }
-    .container {
+    .cont {
         margin: 0 4%;
     }
 }
