@@ -3,6 +3,16 @@ html,body {
 	padding: 0;
 }
 
+.developers{
+	font-family: 'Roboto-Condensed', sans-serif;
+	color: #fff;
+}
+
+.developers a {
+	color: #5383d3;
+	text-decoration: none;
+}
+
 #nav-bar {
     list-style-type: none;
 	display: block;
@@ -29,16 +39,14 @@ html,body {
     padding: 20px 85px;
 	text-decoration: none;
 	font-family: 'Quicksand', sans-serif;
-	/* font-weight: 1000; */
-	/* font-family: 'Roboto-Condensed', sans-serif; */
 }
 
 #nav-bar li a:hover:not(.active) {
-    background-color: #66a3ff;
+    background-color: #303F9F;
 }
 
 .active {
-    background-color: #141452;
+    background-color: #1A237E;
 }
 
 /*nav scrolling*/ 
@@ -89,7 +97,9 @@ html,body {
 	margin-top: 0;
 	height: 65vh;
 	width: 100%;
-	background-image: url('../images/bit_main_4.jpg'); 
+	/* background-image: url('../images/bit_main.jpg');  */
+	background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(88, 185, 253, 0.60)),
+	url('../images/bit_main.jpg'); 
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
@@ -112,12 +122,6 @@ html,body {
 	font-family: 'Poiret One', cursive;
 }
 
-#scroll-down-icon {
-	height:30px; 
-	width: 70px;
-	/*The animation part..*/ 
-	animation: animate 1s linear infinite;
-}
 
 /*button for bottom to top on click*/
 #btn {
@@ -145,28 +149,6 @@ html,body {
 	padding-top: 50px;
 }
 
-@keyframes animate {
-	0%
-	{
-		transform: translateY(-10px);
-	}
-	20%
-	{
-		transform: translateY(0px);
-	}
-	40%
-	{
-		transform: translateY(0px);
-	}
-	60%
-	{
-		transform: translateY(0px);
-	}
-	100%
-	{
-		transform: translateY(10px);
-	}
-}
 /* the footers are fixed to the bottom of the page */
 footer{
 	position: fixed;
@@ -267,11 +249,11 @@ footer{
 }
 @media screen and (max-width: 360px) {
 	#nav-bar-2 li a {
-		padding: 16px 10px;
+		padding: 18px 16px;
 	}
 }
 @media screen and (max-width: 320px) {
 	#nav-bar-2 li a {
-		padding: 16px 8px;
+		padding: 16px 11px;
 	}
 }
