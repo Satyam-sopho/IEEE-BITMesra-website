@@ -1,45 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="refresh" content="5.8;url=index2.html" />
-	<style>
-		@import url("https://fonts.googleapis.com/css?family=Lato:900");
-	</style>
-	 <link rel = "stylesheet"
-  		   type = "text/css"
-    	   href = "resources/css/loader.css" >
-	<meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+	<title>IEEE | BIT Mesra</title>
+
+	<link rel="stylesheet" href="resources/css/footer-distributed-with-address-and-phones.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+	<link rel="stylesheet" href="resources/css/animate.css">
+	<!-- <link rel="stylesheet" type="text/css" href="resources/css/sidenav - toast.css"> -->
+	<link rel="stylesheet" type="text/css" href="resources/css/popup.css">
 	<link rel="icon"  href="resources/images/ieee-logo2.png" />
-	<title>IEEE BIT Mesra</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/js/main.js"></script>
+	<script type="text/javascript" src="resources/js/popup.js"></script>
 </head>
 <body>
-	<div class="content">
-			<svg viewBox="0 0 1000 1000">
-				<clipPath id="cp-text">
-					<image x="20" y="20" width="300" height="80" xlink:href="resources/images/ieee-logo.png" />
-					<text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">
-					 IEEE
-					</text>
-				</clipPath>
-				<g clip-path="url(#cp-text)" class="shadow">
-					<rect width="100%" height="100%" class="anim-shape anim-shape--shadow"></rect>
-				</g>
 
-				<g clip-path="url(#cp-text)" class="colortext">
-					<!-- Animated shapes inside text -->
-					<rect width="100%" height="100%" class="anim-shape"></rect>
-					<rect width="90%" height="100%" class="anim-shape"></rect>
-					<rect width="80%" height="100%" class="anim-shape"></rect>
-					<rect width="70%" height="100%" class="anim-shape"></rect>
-					<rect width="60%" height="100%" class="anim-shape"></rect>
-					<rect width="50%" height="100%" class="anim-shape"></rect>
-					<rect width="40%" height="100%" class="anim-shape"></rect>
-					<rect width="30%" height="100%" class="anim-shape"></rect>
-					<rect width="20%" height="100%" class="anim-shape"></rect>
-					<rect width="10%" height="100%" class="anim-shape"></rect>
-				</g>
-			</svg>
+<a href="#container-1" ><button id="btn" title="Go to top">TOP</button></a>
+<ul id="nav-bar" align="center">
+<!--nav bar unorder list float:left -->
+  <li><a class="active" id="home" href="#container-1">HOME</a></li>
+  <li><a id="projects" href="#container-2">PROJECTS</a></li>
+  <li><a id="event" href="#container-2">EVENTS</a></li>
+  <li><a id="pg" href="#container-2">PHOTO GALLERY</a></li>
+  <li><a id="members" href="#container-2">MEMBERS</a></li>
+  <li><a id="downloads" href="#container-2">DOWNLOADS</a></li>
+  <li><a id="contact-us" href="#container-2">CONTACT</a></li>
+
+</ul>
+<div id="nav-2">
+	<ul id="nav-bar-2" align="center">
+		<!--nav bar unorder list float:left -->
+		<li><a class="active" id="home2" href="#container-1"><i class="fa fa-home"></i></a></li>
+		<li><a id="projects2" href="#container-2"><i class="fa fa-cubes"></i></a></li>
+		<li><a id="event2" href="#container-2"><i class="fa fa-calendar"></i></a></li>
+		<li><a id="pg2" href="#container-2"><i class="fa fa-image"></i></a></li>
+		<li><a id="members2" href="#container-2"><i class="fa fa-users"></i></a></li>
+		<li><a id="downloads2" href="#container-2"><i class="fa fa-download"></i></a></li>
+		<li><a id="contact-us2" href="#container-2"><i class="fa fa-phone"></i></a></li>
+		<li><a id="blank"></a></li>
+	</ul>
+</div>
+<!--Side nav bar with toast function-->
+<div id="mySidenav" class="sidenav">
+	<a class="btn" data-popup-open="popup-1" href="#" onclick="open_popup();" style="font-family: 'Roboto', sans-serif;">Notification &nbsp;&nbsp;<span>1</span></a>
+	<div class="popup bounceInDown animated" data-popup="popup-1">
+		<div class="popup-inner">
+			<h2>Data Structures Workshop</h2>
+			<br>
+			<div class="poster">
+				<img src="resources/images/ds-poster.jpeg"><br>
+			</div>
+			<div id='cloreg'>
+				<br>
+				<a href="#container-2" id="downloads-btn" onclick="close_popup();">Download PPTs</a>
+				<a href="#" onclick="close_popup();">Close</a>
+			</div>
 		</div>
+	</div>
+</div>
+
+
+<!--side nav ends -->
+	<div id="container-1">
+		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo fadeInDown animated" src="resources/images/ieee-logo.png" alt="logo"></a>
+		<p id="main-text" class="fadeInDown animated"><strong>STUDENT CHAPTER BIT MESRA</strong></p></span>
+	</div>
+	<div id="container-2"></div>
+
+<footer class="footer-distributed" id="foot">
+	<div class="footer-left">
+		<h3>IEEE |<span>| BIT MESRA</span></h3>
+		<p class="footer-links">
+			<a href="https://spectrum.ieee.org/" target="_blank">¡¤IEEE Spectrum</a>
+			<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">¡¤IEEE Xplore</a>
+			<a href="http://standards.ieee.org/" target="_blank">¡¤IEEE Standards</a>
+			<a href="http://www.ieeer10.org/" target="_blank">¡¤IEEE Region10</a>
+		</p>
+		<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
+		<p class="developers"> Developed by <a href="https://www.facebook.com/shubham.jawandhiya" target=_blank> Shubham Jawandhiya </a><a href="https://www.facebook.com/satyam.agrawaal.88" target=_blank> Satyam Agrawaal </a><a href="https://www.facebook.com/Niraj.1d" target=_blank> Niraj Shubham </a> </p>
+	</div>
+	<div class="footer-center">
+		<div>
+			<a href="https://www.google.co.in/maps/place/Birla+Institute+of+Technology,+Mesra/@23.4122599,85.4377524,17z/data=!3m1!4b1!4m5!3m4!1s0x39f4fb53f0c27be7:0x66180c1cf3c5e704!8m2!3d23.4122599!4d85.4399411?hl=en" target="_blank"><i class="fa fa-map-marker"></i></a>
+			<p><span>Birla Institute of Technology, Mesra</span> Ranchi, Jharkhand 835215</p>
+		</div>
+		<div>
+			<i class="fa fa-phone"></i>
+			<p>Phone: +91 9955924644</p>
+		</div>
+		<div>
+			<i class="fa fa-globe	"></i>
+			<p><a href="https://www.bitmesra.ac.in/" target="_blank">www.bitmesra.ac.in</a></p>
+		</div>
+	</div>
+	<div class="footer-right">
+		<p class="footer-company-about">
+			<span>BIT MESRA</span>
+				For over five decades, BIT Mesra has been engaged in nurturing minds through a rich heritage of academic excellence. Essentially a hub of bustling student activities, the beautiful campus has been a second-home to thousands of students in their journey to challenge the times.
+		</p>
+		<div class="footer-icons">
+			<a href="https://www.facebook.com/ieeebitmesra/" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="#" ><i class="fa fa-envelope" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
-
